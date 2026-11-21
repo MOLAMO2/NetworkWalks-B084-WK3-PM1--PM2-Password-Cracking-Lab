@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="608" viewBox="0 0 1120 608" role="img" aria-labelledby="title desc">
+  <title id="title">NetworkWalks Cybersecurity Training — Password Cracking and PDF Forensics</title>
+  <desc id="desc">Vector banner for Week 3 Projects PM1 and PM2, Batch B084, featuring a shield, check mark, network nodes, lab details and author information.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d192d"/>
+      <stop offset="0.55" stop-color="#0a1425"/>
+      <stop offset="1" stop-color="#091323"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#101d33" stop-opacity=".72"/>
+      <stop offset="1" stop-color="#0a1425" stop-opacity=".2"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#20d2e2"/>
+      <stop offset="1" stop-color="#19c879"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#24344c" stroke-width=".7" opacity=".28"/>
+    </pattern>
+    <style>
+      .font { font-family: Inter, "Segoe UI", Arial, sans-serif; }
+      .muted { fill:#a8b8d0; }
+      .small { font-size:14px; }
+      .chip { fill:#202f49; }
+      .chiptext { fill:#c7d2e3; font-size:11px; font-weight:700; }
+    </style>
+  </defs>
+
+  <rect width="1120" height="608" fill="url(#bg)"/>
+  <rect width="1120" height="608" fill="url(#grid)"/>
+  <rect x="28.5" y="28.5" width="1063" height="327" rx="17" fill="url(#panel)" stroke="#1c2d46" stroke-width="1.1"/>
+
+  <!-- Shield and check mark -->
+  <path d="M142 122.5 L196.8 142.5 V187.5 C196.8 224.5 176 249.2 142 261.2 C108 249.2 87.2 224.5 87.2 187.5 V142.5 Z"
+        fill="none" stroke="url(#accent)" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M118.5 190.5 L134.2 206.2 L166.4 168.7" fill="none" stroke="#20cda7" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Header typography -->
+  <g class="font">
+    <text x="247" y="83" fill="#27c7f2" font-size="14" font-weight="800" letter-spacing="3.2">NETWORKWALKS CYBERSECURITY TRAINING</text>
+    <text x="247" y="144" fill="#f7f9fd" font-size="44" font-weight="800" letter-spacing="-1.2">Password Cracking <tspan fill="#31bdf0">&amp;</tspan> PDF</text>
+    <text x="247" y="194" fill="#f7f9fd" font-size="44" font-weight="800" letter-spacing="-1.2">Forensics</text>
+    <rect x="247" y="216" width="120" height="4" rx="2" fill="url(#accent)"/>
+    <text x="247" y="254" class="muted" font-size="14.5">Kali Linux · John the Ripper · Johnny GUI · pdf2john / zip2john · Networkwalks Hash Calculator &amp; Password Cracker ·</text>
+    <text x="247" y="277" class="muted" font-size="14.5">pyHanko</text>
+    <text x="247" y="312" fill="#718caf" font-size="13.5">Week 3 · Projects PM1 &amp; PM2 · Batch B084</text>
+  </g>
+
+  <!-- Network node motif -->
+  <g fill="none" stroke="#53647d" stroke-width="2" opacity=".65">
+    <path d="M967 149 L979 117 L1034 75 L1027 135 Z"/>
+    <path d="M967 149 L1027 135"/>
+  </g>
+  <g>
+    <circle cx="967" cy="149" r="5" fill="#657790"/>
+    <circle cx="979" cy="117" r="5" fill="#657790"/>
+    <circle cx="1027" cy="135" r="5" fill="#657790"/>
+    <circle cx="1034.5" cy="75" r="8" fill="#18bfd2"/>
+  </g>
+
+  <!-- Metadata line -->
+  <g class="font" font-size="13.5" fill="#a8b8d0">
+    <text x="81" y="389">▦</text><text x="102" y="389">Week 3</text>
+    <text x="168" y="389">📁</text><text x="190" y="389">PM1 Password Cracking with JTR</text>
+    <text x="412" y="389">📁</text><text x="434" y="389">PM2 Password Cracking with NetworkWalks Tools</text>
+    <text x="759" y="389">🔑</text><text x="780" y="389">Batch B084</text>
+    <text x="871" y="389">🎓</text><text x="893" y="389">NetworkWalks Academy</text>
+  </g>
+
+  <!-- Status chips -->
+  <g class="font">
+    <rect x="183" y="411" width="109" height="29" rx="8" class="chip"/>
+    <rect x="292" y="411" width="62" height="29" rx="0" fill="#347df0"/>
+    <text x="198" y="430" class="chiptext">🐧 KALI LINUX</text>
+    <text x="303" y="430" fill="#fff" font-size="12" font-weight="800">2026.3</text>
+
+    <rect x="363" y="411" width="119" height="29" rx="8" class="chip"/>
+    <rect x="482" y="411" width="47" height="29" rx="0" fill="#173b5b"/>
+    <text x="379" y="430" class="chiptext">▣ VIRTUALBOX</text>
+    <text x="493" y="430" fill="#b6d9f4" font-size="12" font-weight="800">LAB</text>
+
+    <rect x="538" y="411" width="194" height="29" rx="8" class="chip"/>
+    <text x="555" y="430" class="chiptext">JOHN THE RIPPER / JOHNNY</text>
+
+    <rect x="741" y="411" width="61" height="29" rx="8" class="chip"/>
+    <text x="754" y="430" class="chiptext">SCOPE</text>
+    <rect x="802" y="411" width="135" height="29" rx="8" fill="#12a34d"/>
+    <text x="813" y="430" fill="#fff" font-size="11" font-weight="800">AUTHORIZED ONLY</text>
+
+    <rect x="363" y="452" width="174" height="30" rx="8" class="chip"/>
+    <text x="377" y="471" class="chiptext">DICTIONARY ATTACK LAB</text>
+    <rect x="547" y="452" width="155" height="30" rx="8" class="chip"/>
+    <text x="559" y="471" class="chiptext">PASSWORDS CRACKED</text>
+    <rect x="702" y="452" width="55" height="30" rx="8" fill="#12a34d"/>
+    <text x="714" y="471" fill="#fff" font-size="12" font-weight="800">100%</text>
+  </g>
+
+  <!-- Footer -->
+  <path d="M28 504.5 H1092" stroke="#263750" stroke-width="1.2"/>
+  <path d="M210 527 H210 V546" stroke="#21c6ec" stroke-width="2.5"/>
+  <g class="font" font-size="13.5">
+    <text x="227" y="542" fill="#d2dceb" font-weight="700">Author:</text>
+    <text x="281" y="542" fill="#a8b8d0">Molamo Ntsoane</text>
+    <text x="400" y="542" fill="#d2dceb" font-weight="700">Program:</text>
+    <text x="466" y="542" fill="#a8b8d0">Cybersecurity &amp; Ethical Hacking - NetworkWalks Academy</text>
+    <text x="836" y="542" fill="#d2dceb" font-weight="700">Batch:</text>
+    <text x="882" y="542" fill="#a8b8d0">B084</text>
+    <text x="532" y="578" fill="#718caf" font-size="13">Week: 03</text>
+  </g>
+</svg>

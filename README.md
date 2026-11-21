@@ -83,3 +83,128 @@ NetworkWalks-B084-WK3-PM1-PM2-Password-Cracking-Lab/
 | Lab result | `good-luck` |
 
 The recovered lab password opened the PDF and displayed the captured flag page.
+
+### Screenshots & Evidence
+
+**1. Johnny Configuration — John.exe**
+
+![Johnny Settings](screenshots/03_johnny_settings_john_exe.png)
+
+**2. Password Successfully Recovered**
+
+![Johnny Cracked Password](screenshots/04_johnny_cracked_good-luck.png)
+
+**3. PDF Successfully Opened — Flag Verification**
+
+![PDF Flag Verification](screenshots/05_pdf1_opened_flag.png)
+
+## Module 2 — Networkwalks browser tools
+
+**Task:** Use the Networkwalks Hash Calculator and Password Cracker to audit the same lab PDF.
+
+### Steps performed
+
+1. Opened the authorised lab PDF in the Networkwalks Hash Calculator.
+2. Extracted the PDF hash and copied the complete value.
+3. Opened the Networkwalks Password Cracker and pasted the hash.
+4. Ran the dictionary attack and reviewed the result.
+
+### Result
+
+| Item | Result |
+|---|---|
+| Target | `My Locked PDF1.pdf` |
+| Hash type | PDF (`$pdf$` format) |
+| Tools | Networkwalks Hash Calculator and Password Cracker |
+| Attack type | Dictionary attack |
+| Lab result | `1qaz2wsx` |
+| Captured flag | `nw{networkwalks_flag_260821_1}` |
+
+The recovered password opened the PDF and displayed the congratulations page.
+
+### Screenshots & Evidence
+
+**1. NetworkWalks Hash Calculator — PDF Hash Extraction**
+
+![Hash Calculator](screenshots/01_hash_calculator_pdf1.png)
+
+**2. NetworkWalks Password Cracker — Successful Result**
+
+![Password Cracker Success](screenshots/02_password_cracker_success.png)
+
+## Bonus — Kali Linux
+
+The bonus activity used John the Ripper from the Kali Linux terminal.
+
+### PDF hash workflow
+
+```bash
+cd ~/Desktop
+ls
+
+# Extract the PDF hash from the authorised lab file
+pdf2john locked2.pdf > hash.txt
+
+# Review the extracted hash
+cat hash.txt
+
+# Run a dictionary audit with the rockyou wordlist
+john --wordlist=/usr/share/wordlists/rockyou.txt hash.txt
+
+# Display any recovered result
+john --show hash.txt
+```
+
+The PDF hash was recovered during the lab and the document opened successfully.
+
+### ZIP hash workflow
+
+The ZIP archive activity used `zip2john` to extract a hash from `zip_secure.zip`. The resulting `$pkzip2$` hash was saved in `hashes/hash2.txt`.
+
+```bash
+zip2john zip_secure.zip > zip_secure.txt
+john --wordlist=/usr/share/wordlists/rockyou.txt zip_secure.txt
+john --show zip_secure.txt
+```
+
+Use these commands only with your own archive or an archive you are authorised to test. The ZIP workflow is documented here; the repository's `hashes/` folder contains the captured lab hash files.
+
+### Screenshots & Evidence
+
+**1. Kali Linux — John the Ripper Dictionary Attack**
+
+![Kali Linux John the Ripper](screenshots/06_kali_john_rockyou.png)
+
+## Key lessons
+
+- A password hash must be extracted before an offline password audit can be performed.
+- Dictionary attacks test candidate words from a wordlist; weak or commonly used passwords are more likely to be recovered.
+- John the Ripper supports multiple hash formats, including PDF and ZIP formats when the correct extraction tools are used.
+- Johnny provides a graphical interface, while John the Ripper can also be operated from the command line.
+- Strong, unique passwords that are not based on common words are more resistant to dictionary attacks.
+
+## Tools 
+
+- [John the Ripper — Openwall](https://www.openwall.com/john/)
+- [Johnny GUI — Openwall](https://openwall.info/wiki/john/johnny)
+- [Networkwalks Hash Calculator](https://networkwalks.com/hash-calculator/)
+- [Networkwalks Password Cracker](https://networkwalks.com/password-cracker/)
+- [Networkwalks password-cracking lab](https://networkwalks.com/project-task-lab-password-cracking-with-networkwalks-tools/)
+
+## Reference 
+
+- [ ] Sponsored by: NetworkWalks Academy
+- [ ] Mentor and Instructor: Waqas Karim (CCIE)
+- [ ] Email: waqasulkarim@gmail.com
+
+## ⚠️ Disclaimer
+
+All activities were performed only against the authorized lab target provided by the course, my own lab environment, or networks and devices I own. This project is for **educational and cybersecurity learning purposes** only. Unauthorized scanning, enumeration or access to systems and networks is illegal.
+
+---
+
+⭐ Part of my continued hands-on journey in **Cybersecurity, Ethical Hacking and Penetration Testing**.
+
+---
+
+**Week 3 Cybersecurity Lab** · Password Cracking · Learning and evidence repository

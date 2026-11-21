@@ -199,7 +199,7 @@ Use these commands only with your own archive or an archive you are authorised t
 
 ## ⚠️ Disclaimer
 
-All activities were performed only against the authorized lab target provided by the course, my own lab environment, or networks and devices I own. This project is for **educational and cybersecurity learning purposes** only. Unauthorized scanning, enumeration or access to systems and networks is illegal.
+All activities were performed only against the authorized lab target provided by the course, my own lab environment, or networks and devices I own. This project is for **educational and cybersecurity learning purposes** only.
 
 ---
 
